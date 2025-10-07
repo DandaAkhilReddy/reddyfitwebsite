@@ -10,12 +10,14 @@ import {
   Bell,
   LogOut,
   Users,
-  Heart
+  Heart,
+  Camera
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 
 const navItems = [
   { path: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+  { path: '/scan', icon: Camera, label: 'Daily Scan', isNew: true, isPrimary: true },
   { path: '/community', icon: Users, label: 'Community' },
   { path: '/fitness-match', icon: Heart, label: 'Match', isNew: true },
   { path: '/meals', icon: UtensilsCrossed, label: 'Meals' },
